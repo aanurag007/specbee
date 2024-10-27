@@ -1,0 +1,129 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  font-size: 2em;
+  
+  font-weight: bold;
+  margin-bottom: 0;
+}
+h5{
+  color: #000000;
+}
+
+.subheader {
+  padding: 0;
+  color: gray;
+  span {
+      color: blue;
+  }
+}
+.company{
+  color: #6B6B6B;
+}
+.speaker-detail {
+  display: flex;
+  display: none;
+  height: 150px;
+  gap: 16px;
+  position: absolute;
+  width: 58%;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 36px 30px 36px 30px;
+  border-radius: 10px;
+  top: 135px;
+  left: 19%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  .close-btn {
+       
+      font-size: 1.5em;
+      cursor: pointer;
+      float: right;
+  }
+  .speaker-position{
+    color: #000000;
+  }
+  .speaker-image{
+    border-radius: 50%;
+    
+  }
+  .speaker-company{
+    color: #6B6B6B;
+  }
+  .speaker-description{
+    width: 70%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .speaker-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .text-info{
+      display: flex;
+      
+    }
+    .info1{
+
+      width: 30%;
+      overflow: hidden;
+      flex-wrap: nowrap;
+      align-items: start;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .slider-btn {
+      background: none;
+      border: none;
+      font-size: 2em;
+      cursor: pointer;
+  }
+  .slides {
+      display: flex;
+      overflow: hidden;
+      .card {
+          background: white;
+          border-radius: 10px;
+          padding: 10px;
+          margin: 0 10px;
+          width: 200px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          cursor: pointer;
+          transition: transform 0.2s;
+          &:hover {
+              transform: scale(1.05);
+          }
+          .speaker-image {
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+          }
+      }
+  }
+}
+
+.program {
+  margin-top: 20px;
+  .program-btn {
+      background: blue;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+  }
+  p {
+      margin-top: 5px;
+  }
+}
+

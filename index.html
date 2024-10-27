@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speaker Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="header">View our Featured Speakers for the Event</h2>
+      <p class="subheader">
+        Speakers are core contributors and industry thought leaders working at
+        <span>companies</span> that push for innovation.
+      </p>
+
+      <!-- Speaker Detail Popup -->
+      <div class="speaker-detail" id="speakerDetail">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <div class="speaker-info">
+          <img src="speaker1.jpg" alt="John Doe" class="speaker-image" />
+          <div class="text-info">
+            <div class="info1">
+              <h3 class="speaker-name">John Doe</h3>
+              <h4 class="speaker-position">Chief Marketing Officer</h4>
+              <p class="speaker-company">Specbee</p>
+              <div class="social-icons">
+                <span class="icon">🔥</span>
+                <span class="icon">🖥️</span>
+                <span class="icon">🔗</span>
+              </div>
+            </div>
+
+            <p class="speaker-description">
+              Monotonectally synergize business communities rather than
+              client-centric convergence. Assertively unleash cross-platform
+              best practices rather than pandemic total linkage. Synergistically
+              monetize parallel infomediaries whereas 2.0 mindshare.
+              Dramatically pursue real-time markets through e-business strategic
+              theme areas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speakers Slider -->
+      <div class="slider" id="slider">
+        <button class="slider-btn left" id="leftBtn">&lt;</button>
+        <div class="slides">
+          <div
+            class="card"
+            onclick="showDetails('img1.png', 'John Doe', 'Chief Marketing Officer', 'Specbee')"
+          >
+            <img src="img1.png" alt="John Doe" class="speaker-image" />
+            <h4>John Doe</h4>
+            <h5>Chief Marketing Officer</h5>
+            <p class="company">Acme Corp</p>
+          </div>
+          <div
+            class="card"
+            onclick="showDetails('img2.png', 'John Doe', 'Chief Engagement Officer', 'Acquia')"
+          >
+            <img src="img2.png" alt="John Doe" class="speaker-image" />
+            <h4>John Doe</h4>
+            <h5>Chief Engagement Officer</h5>
+            <p class="company">Acquia</p>
+          </div>
+          <div
+            class="card"
+            onclick="showDetails('img3.png', 'John Doe', 'Chief Technical Developer', 'Pantheon')"
+          >
+            <img src="img3.png" alt="John Doe" class="speaker-image" />
+            <h4>John Doe</h4>
+            <h5>Chief Technical Developer</h5>
+            <p class="company">Pantheon</p>
+          </div>
+          <div
+            class="card"
+            onclick="showDetails('img4.png', 'John Doe', 'Chief Marketing Officer', 'Specbee')"
+          >
+            <img src="img4.png" alt="John Doe" class="speaker-image" />
+            <h4>John Doe</h4>
+            <h5>Chief Marketing Officer</h5>
+            <p class="company">Specbee</p>
+          </div>
+        </div>
+        <button class="slider-btn right" id="rightBtn">&gt;</button>
+      </div>
+
+      <!-- Program Button -->
+      <div class="program">
+        <a href="#" class="program-btn">See the Program</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
